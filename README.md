@@ -1,4 +1,4 @@
-# Fretloop Privacy Site
+# Fretloop Site
 
 This folder is a static website for Fretloop.
 
@@ -6,7 +6,15 @@ This folder is a static website for Fretloop.
 
 - `index.html`: minimal homepage with the app icon, app name, and App Store link
 - `privacy/index.html`: public privacy policy page
+- `app-map/`: Flutter web build of the flutter-map visualiser with the
+  Fretloop `.appmap` embedded as its default bundle
 - `icon.svg`: shared icon used by both pages
+
+The app map contains fictional seeded data only. It is intentionally marked
+`noindex` but remains publicly accessible to anyone with the URL when deployed
+on GitHub Pages. The upstream flutter-map project does not currently publish a
+licence, so obtain the author's permission before distributing its compiled
+visualiser publicly.
 
 ## Before You Publish
 
@@ -51,6 +59,7 @@ If this site is published from a repository root:
 
 - Home: `https://<owner>.github.io/<repo>/`
 - Privacy: `https://<owner>.github.io/<repo>/privacy/`
+- App map: `https://<owner>.github.io/<repo>/app-map/`
 
 If it is published from a dedicated `.<github>.io` repository, the URLs will be rooted at the domain itself.
 
@@ -76,4 +85,3 @@ Update the privacy policy before shipping a new app version if Fretloop adds:
 - external APIs beyond Apple services
 - advertising
 - data sharing with third parties
-

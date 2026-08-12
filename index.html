@@ -114,6 +114,8 @@
     .actions {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
       margin-top: 22px;
     }
 
@@ -130,6 +132,12 @@
       font-size: 14px;
       font-weight: 700;
       box-shadow: var(--shadow);
+    }
+
+    .button-secondary {
+      border-color: rgba(23, 23, 25, 0.16);
+      background: #ffffff;
+      color: #171719;
     }
 
     @media (max-width: 420px) {
@@ -154,6 +162,7 @@
       <h1>Fretloop</h1>
       <div class="actions">
         <a class="button" href="https://apps.apple.com/gb/app/fretloop/id6761345559" rel="noopener noreferrer">App Store</a>
+        <a class="button button-secondary" href="app-map/">Explore the app map</a>
       </div>
     </section>
   </main>
